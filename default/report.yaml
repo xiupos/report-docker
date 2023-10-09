@@ -15,6 +15,7 @@ variables:
         - a4paper
     linkcolor: blue
     top-level-division: section
+    indent: true
 
 filters:
     - pandoc-crossref
@@ -34,6 +35,3 @@ metadata:
     secPrefix: "セクション"
 
 shift-heading-level-by: -1
-
-citeproc: true
-cite-method: biblatex
