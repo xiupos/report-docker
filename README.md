@@ -22,4 +22,7 @@ repo test.md -o test.tex
 ```bash
 # use pandoc directly
 alias pandoc='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) ghcr.io/xiupos/report-docker'
+
+# update image
+alias repo-update='docker pull ghcr.io/xiupos/report-docker:latest'
 ```

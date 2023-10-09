@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'Dockerfile'
+      - 'default/**/*'
       - '.github/workflows/docker.yaml'
   workflow_dispatch:
 
