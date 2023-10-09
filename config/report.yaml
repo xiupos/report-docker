@@ -1,0 +1,39 @@
+from: markdown+raw_tex
+to: latex
+
+pdf-engine: lualatex
+listings: true
+number-sections: true
+
+variables:
+    lang: ja
+    luatexjapresetoptions: fonts-noto-cjk
+    documentclass: ltjsarticle
+    classoption:
+        - 11pt
+        - pandoc
+        - a4paper
+    linkcolor: blue
+    top-level-division: section
+
+filters:
+    - pandoc-crossref
+
+include-in-header:
+    - ${.}/header.tex
+
+metadata:
+    listings: true
+    figureTitle: "図"
+    tableTitle: "表"
+    listingTitle: "コード"
+    figPrefix: "図"
+    eqnPrefix: "式"
+    tblPrefix: "表"
+    lstPrefix: "コード"
+    secPrefix: "セクション"
+
+shift-heading-level-by: -1
+
+citeproc: true
+cite-method: biblatex
