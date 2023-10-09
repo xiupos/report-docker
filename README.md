@@ -4,7 +4,7 @@
 
 ```bash
 # add the following line to ~/.bashrc
-alias repo='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) ghcr.io/xiupos/report-docker -d /config/report.yaml'
+alias repo='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) ghcr.io/xiupos/report-docker -d /default/report.yaml'
 ```
 
 ## Usage

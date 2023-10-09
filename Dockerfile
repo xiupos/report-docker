@@ -16,4 +16,4 @@ ENV TLMGR_DEP \
 RUN tlmgr update --self --all && \
     tlmgr install ${TLMGR_DEP}
 
-COPY config/ /config/
+COPY default/ /default/
