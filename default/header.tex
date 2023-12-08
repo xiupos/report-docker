@@ -31,10 +31,18 @@
 \usepackage{fancybox}
 \usepackage[version=3]{mhchem}
 \usepackage{physics}
+\let\divisionsymbol\div
+\newcommand{\div}{\divergence}
 \usepackage{amsthm}
 \usepackage{pgf}
 \RequirePackage{luatex85}
 \usepackage[all]{xy}
+\usepackage{mathcommand}
+\renewmathcommand{\~}{\tilde}
+\renewmathcommand{\^}{\hat}
+\renewmathcommand{\=}{\bar}
+\renewmathcommand{\.}{\dot}
+\renewmathcommand{\"}{\ddot}
 
 \usepackage{float}
 \let\origfigure\figure

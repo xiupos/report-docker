@@ -11,7 +11,8 @@ ENV TLMGR_DEP \
     pdfpages \
     fancybox \
     pgf \
-    xypic
+    xypic \
+    mathcommand
 
 RUN tlmgr update --self --all && \
     tlmgr install ${TLMGR_DEP}
