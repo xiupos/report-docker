@@ -19,13 +19,10 @@ variables:
     indent: true
 
 filters:
-    - pandoc-citeproc
     - pandoc-crossref
 
 include-in-header:
     - ${.}/header.tex
-
-cite-method: citeproc
 
 metadata:
     listings: true
