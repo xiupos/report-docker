@@ -4,6 +4,7 @@ to: latex
 pdf-engine: lualatex
 listings: true
 number-sections: true
+citeproc: true
 
 variables:
     lang: ja
@@ -18,10 +19,13 @@ variables:
     indent: true
 
 filters:
+    - pandoc-citeproc
     - pandoc-crossref
 
 include-in-header:
     - ${.}/header.tex
+
+cite-method: citeproc
 
 metadata:
     listings: true
