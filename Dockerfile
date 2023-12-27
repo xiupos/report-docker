@@ -1,7 +1,7 @@
 FROM pandoc/latex:latest
 
 ENV TLMGR_DEP \
-    sitx2-otf \
+    stix2-otf \
     luatex85 \
     latexmk \
     luaotfload \
