@@ -1,7 +1,7 @@
 FROM pandoc/latex:latest
 
 ENV TLMGR_DEP \
-    collection-langjapanese \
+    sitx2-otf \
     luatex85 \
     latexmk \
     luaotfload \

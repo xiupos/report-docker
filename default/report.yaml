@@ -7,9 +7,6 @@ number-sections: true
 
 variables:
     lang: ja
-    luatexjapresetoptions:
-        - haranoaji
-        - nfssonly
     documentclass: ltjsarticle
     classoption:
         - 11pt
@@ -21,11 +18,14 @@ variables:
         - bottom=20truemm
         - right=25truemm
         - left=25truemm
+    luatexjapresetoptions:
+        - haranoaji
+        - nfssonly
+    mathfont: STIX Two Math
     graphics: true
     linkcolor: blue
     top-level-division: section
     indent: true
-    mathfont: NewComputerModernMath
 
 shift-heading-level-by: -1
 
