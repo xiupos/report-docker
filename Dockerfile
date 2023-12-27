@@ -2,6 +2,7 @@ FROM pandoc/latex:latest
 
 ENV TLMGR_DEP \
     collection-langjapanese \
+    collection-fontsrecommended \
     luatex85 \
     latexmk \
     luaotfload \

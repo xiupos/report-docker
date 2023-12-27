@@ -4,25 +4,39 @@ to: latex
 pdf-engine: lualatex
 listings: true
 number-sections: true
-citeproc: true
 
 variables:
     lang: ja
-    luatexjapresetoptions: fonts-noto-cjk
+    luatexjapresetoptions:
+        - haranoaji
+        - nfssonly
     documentclass: ltjsarticle
     classoption:
         - 11pt
         - pandoc
         - a4paper
+    geometry:
+        - includeheadfoot
+        - top=20truemm
+        - bottom=20truemm
+        - right=25truemm
+        - left=25truemm
+    graphics: true
     linkcolor: blue
     top-level-division: section
     indent: true
+    mathfont: NewComputerModernMath
+
+shift-heading-level-by: -1
 
 filters:
     - pandoc-crossref
+    - type: citeproc
 
 include-in-header:
     - ${.}/header.tex
+
+csl: ${.}/sist02.csl
 
 metadata:
     listings: true
@@ -34,5 +48,3 @@ metadata:
     tblPrefix: "表"
     lstPrefix: "コード"
     secPrefix: "セクション"
-
-shift-heading-level-by: -1

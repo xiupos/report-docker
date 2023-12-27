@@ -1,11 +1,6 @@
 \usepackage{luatexja}
 
-\usepackage[includeheadfoot,top=20truemm,bottom=20truemm,right=25truemm,left=25truemm]{geometry}
-
-% \usepackage{bm}
-\newcommand{\bm}[1]{\symbfit{{#1}}}
 \usepackage{ascmac}
-\usepackage{graphicx,color}
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{subfig}
@@ -27,17 +22,16 @@
 \usepackage{multicol}
 
 \usepackage{siunitx}
-\usepackage{ascmac}
 \usepackage{fancybox}
 \usepackage[version=3]{mhchem}
-\usepackage{physics}
-\let\divisionsymbol\div
-\renewcommand{\div}{\divergence}
+\AtBeginDocument{\usepackage{physics}}
 \usepackage{amsthm}
 \usepackage{pgf}
 \RequirePackage{luatex85}
 \usepackage[all]{xy}
+
 \usepackage{mathcommand}
+\newmathcommand{\bm}[1]{\symbfit{{#1}}}
 \renewmathcommand{\~}{\tilde}
 \renewmathcommand{\^}{\hat}
 \renewmathcommand{\=}{\bar}
@@ -52,14 +46,6 @@
 } {
     \endorigfigure
 }
-
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-
-\def\tightlist{\itemsep1pt\parskip0pt\parsep0pt}
 
 \newenvironment{Shaded}{\begin{shaded}}{\end{shaded}}
 \definecolor{shadecolor}{RGB}{200,200,200}
