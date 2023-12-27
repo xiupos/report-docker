@@ -20,8 +20,11 @@ variables:
         - left=25truemm
     luatexjapresetoptions:
         - haranoaji
+        - deluxe
         - nfssonly
     mathfont: STIX Two Math
+    mathfontoptions:
+        - Scale=1.1
     graphics: true
     linkcolor: blue
     top-level-division: section
