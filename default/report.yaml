@@ -21,7 +21,8 @@ variables:
     luatexjapresetoptions:
         - haranoaji
         - deluxe
-        - nfssonly
+        - no-math
+    mainfont: STIX Two Text
     mathfont: STIX Two Math
     mathfontoptions:
         - Scale=1.1
