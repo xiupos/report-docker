@@ -1,11 +1,11 @@
 FROM pandoc/latex:latest
 
 ENV TLMGR_DEP \
-    stix2-otf \
+    collection-langjapanese \
     luatex85 \
     latexmk \
     luaotfload \
-    newcomputermodern \
+    stix2-otf \
     mhchem \
     siunitx \
     physics \
