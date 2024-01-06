@@ -35,6 +35,7 @@ shift-heading-level-by: -1
 
 filters:
     - pandoc-crossref
+    - ${.}/plugins/include-files.lua
     - type: citeproc
 
 include-in-header:
