@@ -40,7 +40,7 @@ filters:
     - type: citeproc
 
 include-in-header:
-    - ${.}/header.tex
+    - ${.}/header.sty
 
 csl: ${.}/sist02.csl
 
