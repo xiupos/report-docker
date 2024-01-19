@@ -14,7 +14,7 @@ ENV TLMGR_DEP \
     pgf \
     xypic \
     mathcommand \
-    tikz \
+    pgf \
     tikz-feynman
 
 RUN tlmgr update --self --all && \
