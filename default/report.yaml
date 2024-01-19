@@ -37,6 +37,7 @@ filters:
     - pandoc-crossref
     - ${.}/plugins/include-files.lua
     - ${.}/plugins/fenced-divs.lua
+    - ${.}/plugins/codeblock.lua
     - type: citeproc
 
 include-in-header:
