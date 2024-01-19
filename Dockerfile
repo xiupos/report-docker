@@ -13,7 +13,9 @@ ENV TLMGR_DEP \
     fancybox \
     pgf \
     xypic \
-    mathcommand
+    mathcommand \
+    tikz \
+    tikz-feynman
 
 RUN tlmgr update --self --all && \
     tlmgr install ${TLMGR_DEP}
