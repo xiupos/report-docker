@@ -23,6 +23,17 @@ repo test.md -o test.tex
 # use pandoc directly
 alias pandoc='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) ghcr.io/xiupos/report-docker'
 
+# use to convert only to pdf
+function repo-pdf() {
+  docker run --rm \
+    --volume "$(pwd):/data" \
+    --user $(id -u):$(id -g) \
+    ghcr.io/xiupos/report-docker \
+      -d /default/report.yaml \
+      -o ${1%%.*}.pdf \
+      $1
+}
+
 # update image
 alias repo-update='docker pull ghcr.io/xiupos/report-docker:latest'
 ```
