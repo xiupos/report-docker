@@ -15,7 +15,8 @@ ENV TLMGR_DEP \
     xypic \
     mathcommand \
     pgf \
-    tikz-feynman
+    tikz-feynman \
+    feynmf
 
 RUN tlmgr update --self --all && \
     tlmgr install ${TLMGR_DEP}
