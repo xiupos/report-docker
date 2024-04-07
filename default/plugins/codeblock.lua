@@ -1,5 +1,4 @@
 function CodeBlock(el)
-  -- screen
   if el.classes[1] == "tikz" then
     body = table.concat({
       "\\begin{figure}",
@@ -8,7 +7,7 @@ function CodeBlock(el)
       "\\end{figure}",
     }, "\n")
     return pandoc.RawBlock("latex", body)
-  else if el.classes[1] == "feynmf" then
+  elseif el.classes[1] == "feynmf" then
     body = table.concat({
       "\\begin{figure}",
       "\\centering",
