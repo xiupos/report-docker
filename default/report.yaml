@@ -30,6 +30,10 @@ variables:
     linkcolor: blue
     top-level-division: section
     indent: true
+    include-before:
+        - "\\begin{fmffile}{fmffile}"
+    include-after:
+        - "\\end{fmffile}"
 
 shift-heading-level-by: -1
 
@@ -42,12 +46,6 @@ filters:
 
 include-in-header:
     - ${.}/header.sty
-
-include-before:
-    - "\\begin{fmffile}{fmffile}"
-
-include-after:
-    - "\\end{fmffile}"
 
 csl: ${.}/sist02.csl
 
