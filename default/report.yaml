@@ -43,6 +43,12 @@ filters:
 include-in-header:
     - ${.}/header.sty
 
+include-before:
+    - "\\begin{fmffile}{fmffile}"
+
+include-after:
+    - "\\end{fmffile}"
+
 csl: ${.}/sist02.csl
 
 metadata:

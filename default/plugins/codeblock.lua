@@ -4,9 +4,15 @@ function CodeBlock(el)
     body = table.concat({
       "\\begin{figure}",
       "\\centering",
-      "\\begin{tikzpicture}",
       el.text,
-      "\\end{tikzpicture}",
+      "\\end{figure}",
+    }, "\n")
+    return pandoc.RawBlock("latex", body)
+  else if el.classes[1] == "feynmf" then
+    body = table.concat({
+      "\\begin{figure}",
+      "\\centering",
+      el.text,
       "\\end{figure}",
     }, "\n")
     return pandoc.RawBlock("latex", body)
