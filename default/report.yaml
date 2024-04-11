@@ -30,10 +30,6 @@ variables:
     linkcolor: blue
     top-level-division: section
     indent: true
-    include-before:
-        - "\\begin{fmffile}{fmffile}"
-    include-after:
-        - "\\end{fmffile}"
 
 shift-heading-level-by: -1
 
