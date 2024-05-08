@@ -24,7 +24,7 @@ repo test.md -o test.tex
 alias pandoc='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) ghcr.io/xiupos/report-docker'
 
 # use to convert only to pdf
-function repo-pdf() {
+function repo() {
   docker run --rm \
     --volume "$(pwd):/data" \
     --user $(id -u):$(id -g) \
@@ -35,5 +35,5 @@ function repo-pdf() {
 }
 
 # update image
-alias repo-update='docker pull ghcr.io/xiupos/report-docker:latest'
+alias repo-pandoc='docker pull ghcr.io/xiupos/report-docker:latest'
 ```
