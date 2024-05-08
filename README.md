@@ -4,7 +4,7 @@
 
 ```bash
 # add the following line to ~/.bashrc
-alias repo='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) ghcr.io/xiupos/report-docker -d /default/report.yaml'
+alias report-docker='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(id -g) ghcr.io/xiupos/report-docker -d /default/report.yaml'
 ```
 
 ## Usage
@@ -35,5 +35,5 @@ function repo() {
 }
 
 # update image
-alias repo-pandoc='docker pull ghcr.io/xiupos/report-docker:latest'
+alias repo-update='docker pull ghcr.io/xiupos/report-docker:latest'
 ```
