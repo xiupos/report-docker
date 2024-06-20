@@ -10,6 +10,7 @@ ENV TLMGR_DEP \
     siunitx \
     physics \
     pdfpages \
+    pdflscape \
     fancybox \
     pgf \
     xypic \
