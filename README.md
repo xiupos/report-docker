@@ -11,10 +11,10 @@ alias report-docker='docker run --rm --volume "$(pwd):/data" --user $(id -u):$(i
 
 ```bash
 # md -> pdf
-repo test.md
+report-docker test.md -o test.pdf
 
 # md -> tex
-repo-tex test.md
+report-docker test.md -o test.tex
 ```
 
 ## Tips
