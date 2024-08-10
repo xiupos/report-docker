@@ -1,3 +1,5 @@
+\usepackage{luatexja}
+
 \usepackage{ascmac}
 \usepackage{longtable}
 \usepackage{booktabs}
@@ -8,7 +10,7 @@
 \usepackage[backend=biber]{biblatex}
 \usepackage{listings}
 \usepackage{framed}
-\usepackage[unicode]{hyperref}
+\usepackage[luatex,unicode]{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
@@ -25,6 +27,7 @@
 \AtBeginDocument{\usepackage{physics}}
 \usepackage{amsthm}
 \usepackage{pgf}
+\RequirePackage{luatex85}
 \usepackage[all]{xy}
 \usepackage{amscd}
 \usepackage{tikz-cd}
@@ -32,7 +35,7 @@
 \usepackage{tikz-feynhand}
 
 \usepackage{mathcommand}
-\newmathcommand{\bm}[1]{\boldsymbol{{#1}}}
+\newmathcommand{\bm}[1]{\symbfit{{#1}}}
 \newmathcommand{\slashed}[1]{{\displaystyle{\not}{#1}}}
 \renewmathcommand{\d}[1]{\dd{{#1}}}
 \renewmathcommand{\~}{\tilde}

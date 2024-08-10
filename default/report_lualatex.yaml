@@ -1,25 +1,31 @@
 from: markdown+raw_tex
 to: latex
 
-pdf-engine: pdflatex
+pdf-engine: lualatex
 listings: true
 number-sections: true
 
 variables:
     lang: ja
-    documentclass: bxjsarticle
+    documentclass: ltjsarticle
     classoption:
         - 11pt
         - pandoc
         - a4paper
-        - pdflatex
-        - japaram={jis2004}
     geometry:
         - includeheadfoot
         - top=20truemm
         - bottom=20truemm
         - right=25truemm
         - left=25truemm
+    luatexjapresetoptions:
+        - haranoaji
+        - deluxe
+        - no-math
+    mainfont: STIX Two Text
+    mathfont: STIX Two Math
+    mathfontoptions:
+        - Scale=1.1
     graphics: true
     linkcolor: blue
     top-level-division: section
@@ -36,7 +42,7 @@ filters:
     - type: citeproc
 
 include-in-header:
-    - ${.}/header.sty
+    - ${.}/header_lualatex.sty
 
 csl: ${.}/sist02.csl
 
