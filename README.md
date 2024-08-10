@@ -30,7 +30,7 @@ function repo() {
   report-docker -o ${1%%.*}.pdf $1
 }
 
-# use to convert only to pdf
+# use to convert only to tex
 function repo-tex() {
   report-docker -o ${1%%.*}.tex $1
 }
