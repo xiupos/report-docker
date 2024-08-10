@@ -1,3 +1,4 @@
+texlive-fonts-recommended
 collection-langjapanese
 luatex85
 latexmk
