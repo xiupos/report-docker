@@ -35,6 +35,7 @@ shift-heading-level-by: -1
 
 filters:
     - pandoc-crossref
+    - pandoc-unicode-math
     - ${.}/plugins/include-files.lua
     - ${.}/plugins/fenced-divs.lua
     - ${.}/plugins/codeblock.lua

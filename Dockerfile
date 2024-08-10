@@ -1,26 +1,12 @@
 FROM pandoc/latex:latest
 
-ENV TLMGR_DEP \
-    collection-langjapanese \
-    luatex85 \
-    latexmk \
-    luaotfload \
-    stix2-otf \
-    mhchem \
-    siunitx \
-    physics \
-    pdfpages \
-    pdflscape \
-    fancybox \
-    pgf \
-    xypic \
-    mathcommand \
-    pgf \
-    tikz-cd \
-    tikz-feynman \
-    tikz-feynhand
+COPY tlmgr_dep.txt /
 
 RUN tlmgr update --self --all && \
-    tlmgr install ${TLMGR_DEP}
+    tlmgr install $(cat /tlmgr_dep.txt) \
+    wget https://github.com/marhop/pandoc-unicode-math/releases/download/v3.1.0/pandoc-unicode-math_Linux_pandoc-types-1.23.zip -O temp.zip \
+    unzip temp.zip -d /usr/local/bin \
+    chmod +x /usr/local/bin/pandoc-unicode-math* \
+    rm temp.zip
 
 COPY default/ /default/
