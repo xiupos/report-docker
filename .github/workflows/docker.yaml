@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'Dockerfile'
+      - 'tlmgr_dep.txt'
       - 'default/**/*'
       - '.github/workflows/docker.yaml'
   workflow_dispatch:
