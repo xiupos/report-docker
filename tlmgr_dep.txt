@@ -1,5 +1,5 @@
-collection-fontsrecommended
 collection-langjapanese
+ipaex-type1
 luatex85
 latexmk
 luaotfload
