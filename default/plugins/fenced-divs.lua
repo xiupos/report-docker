@@ -4,11 +4,11 @@ function Div(el)
     -- insert element in front
     table.insert(
       el.content, 1,
-      pandoc.RawBlock("latex", "\\begin{screen}"))
+      pandoc.RawBlock("latex", "\\begin{tcolorbox}"))
     -- insert element at the back
     table.insert(
       el.content,
-      pandoc.RawBlock("latex", "\\end{screen}"))
+      pandoc.RawBlock("latex", "\\end{tcolorbox}"))
 
   -- proof
   elseif el.classes[1] == "proof" then
