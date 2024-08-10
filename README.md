@@ -45,12 +45,12 @@ alias repo-update='docker pull ghcr.io/xiupos/report-docker:latest'
 # Install texlive
 curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 tar xf install-tl-unx.tar.gz && cd install-tl-*
-sudo perl ./install-tl -no-gui --no-interaction -repository http://mirror.ctan.org/systems/texlive/tlnet/
+sudo perl ./install-tl -no-gui -no-interaction -repository http://mirror.ctan.org/systems/texlive/tlnet/
 sudo /usr/local/texlive/*/bin/*/tlmgr path add
 cd .. && rm -rf install-tl-*
 
 # Install pandoc and plugins (on Arch Linux; see https://pandoc.org/installing.html)
-sudo pandoc -S pandoc pandoc-crossref
+sudo pacman -S pandoc pandoc-crossref
 wget https://github.com/marhop/pandoc-unicode-math/releases/download/v3.1.0/pandoc-unicode-math_Linux_pandoc-types-1.23.zip -O temp.zip
 sudo unzip temp.zip -d /usr/local/bin
 sudo chmod +x /usr/local/bin/pandoc-unicode-math*
