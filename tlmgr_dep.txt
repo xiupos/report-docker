@@ -18,4 +18,3 @@ tikz-cd
 tikz-feynman
 tikz-feynhand
 tcolorbox
-jvlisting
